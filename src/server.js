@@ -4,7 +4,7 @@ const env = require("./config/env");
 const PORT = process.env.PORT || 1111;
 const start = async () => {
   await connectDB();
-  app.listen(PORT, () => {
+  app.listen(PORT, "0.0.0.0", () => {
     console.log(`Claude ProNotebook API running on http://localhost:${PORT} (${env.nodeEnv})`);
   });
 };
@@ -19,3 +19,8 @@ process.on("uncaughtException", (err) => {
   console.error("Uncaught Exception:", err);
   process.exit(1);
 });
+
+
+// app.listen(PORT, "0.0.0.0", () => {
+//   console.log(`Claude ProNotebook API running on port ${PORT} (${process.env.NODE_ENV || "development"})`);
+// });
