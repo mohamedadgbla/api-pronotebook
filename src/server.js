@@ -1,11 +1,11 @@
 const app = require("./app");
 const connectDB = require("./config/db");
 const env = require("./config/env");
-
+const PORT = process.env.PORT || 1111;
 const start = async () => {
   await connectDB();
-  app.listen(env.port, () => {
-    console.log(`Claude ProNotebook API running on http://localhost:${env.port} (${env.nodeEnv})`);
+  app.listen(PORT, () => {
+    console.log(`Claude ProNotebook API running on http://localhost:${PORT} (${env.nodeEnv})`);
   });
 };
 
