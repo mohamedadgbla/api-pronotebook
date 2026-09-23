@@ -1,12 +1,12 @@
 {
   "name": "pronotebook-api",
   "version": "1.0.0",
-  "description": "ProNotebook REST API - a professional notebook backend (MERN)",
-  "main": "server.js",
+  "description": "Claude ProNotebook REST API",
+  "main": "src/server.js",
   "scripts": {
-   "start": "node server.js",
-    "dev": "nodemon server.js",
-    "seed": "node seed.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed.js"
   },
   "keywords": [
     "notebook",
@@ -33,3 +33,4 @@
     "nodemon": "^3.1.4"
   }
 }
+
