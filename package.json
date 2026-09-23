@@ -4,8 +4,8 @@
   "description": "ProNotebook REST API - a professional notebook backend (MERN)",
   "main": "server.js",
   "scripts": {
-  "start": "node api.js",
-    "dev": "nodemon api.js",
+  "start": "server api.js",
+    "dev": "nodemon server.js",
     "seed": "node seed.js"
   },
   "keywords": [
