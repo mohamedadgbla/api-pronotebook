@@ -33,6 +33,9 @@ app.get("/api/health", (_req, res) =>
   res.json({ success: true, message: "ProNotebook API is healthy", uptime: process.uptime() })
 );
 
+// app.get("/", (req, res) => {
+//   res.json({ success: true, message: "ProNotebook API is running" });
+// });
 // ---- API v1 ----
 app.use("/api/v1", routes);
 
